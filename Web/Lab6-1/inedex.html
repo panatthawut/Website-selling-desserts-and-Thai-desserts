@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>
+                <a href="inedex.html">
+                    HOME
+                </a>
+                
+            </h1>
+        </div>
+        <div class="header-center">
+            <div class="navbar">
+
+                <ul >
+                    <li class="active" >
+                        <a   href="inedex.html">
+                            inwza1
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index2.html">
+                            inwza2
+
+                        </a>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="header-right">
+
+        </div>
+        
+
+        
+    </header>
+
+   <article>
+    <div class="article-top">
+        <h1>
+            CSS Font-Sizing: a Definitive Guide
+        </h1>
+    </div>
+    <div class="article-botton">
+        <p>
+            Font sizing in CSS sounds as though it should be easy. Until you try it. 
+            Many developers use the force; they tinker with the font-size property 
+            <br>until it looks right only to find it’s different in another browser. A little understanding can go a long way
+        </p>
+    </div>
+   </article>
+    <section>
+        <h1>The font-size Property</h1>
+            
+        <p>
+The font-size property can be set for any HTML tag (even if it would not normally contain textual content like br). It can be assigned a variety of absolute, relative, or length size parameters.
+
+An element will inherit the font-size of its parent unless you override it. This is especially important when you specify relative sizes.
+        </p>
+    </section>
+    <div class="section-inwza">
+
+    </div>
+    <section>
+        <h1>Absolute Font Sizing Keywords</h1>
+            
+        <p>
+            Several absolute font-sizing keywords are available. The font size is determined from a browser preset and the element will not inherit its parent’s size.
+        </p>
+        <ul>
+            <li style="font-size:xx-small ;">font-size: xx-small;</li>
+            <li style="font-size:x-small ;">font-size: x-small;</li>
+            <li style="font-size:small ;"> font-size: small</li>
+            <li style="font-size:medium ;">font-size: medium;</li>
+            <li style="font-size:large ;">font-size: large;</li>
+            <li style="font-size:x-large ;">font-size: x-large;</li>
+            <li style="font-size:xx-large ;">font-size: xx-large;</li>
+        </ul>
+        <p>
+            Although most browsers support these keywords, the exact sizes will differ. They are a fairly crude method of font sizing and are generally avoided by most developers.
+        </p>
+    </section>
+    <div class="section-inwza">
+
+    </div>
+    <section>
+        <h1>Relative Font Sizing Keywords</h1>
+            
+        <p>Two relative font-sizing keywords are available. The font is sized according to its parent element:
+        </p>
+        <ul>
+            <li style="font-size: smaller;">font-size: smaller;</li>
+            <li style="font-size: larger">font-size: larger</li>
+            
+        </ul>
+        <p>For example, if the parent has a font size of ‘medium’, a value of ‘larger’ will set the element to ‘large’. Other font units are normally altered by a factor of around 1.2 but, again, there is no standard and browser results will differ.
+        </p>
+    </section>
+    <div class="section-inwza">
+
+    </div>
+
+    <section>
+        <h1>Absolute Lengths</h1>
+            
+        <p>The font-size property can be assigned an absolute length:
+        </p>
+        <ul>
+            <li >mm: millimeters, e.g. 10mm.</li>
+            <li >cm: centimeters, e.g. 1cm ( = 10mm)</li>
+            <li >in: inches, e.g. 0.39in ( ~= 10mm).</li>
+            <li >pt: point, where 1pt is generally assumed to be 1/72 inch e.g. 12pt</li>
+            <li >pc: pica, where 1pc is 12p</li>
+            <li >px: pixel, e.g. 14px.</li>
+        </ul>
+        <p>In general, there are issues with all these measurement units. Millimeters, centimeters and inches are inaccurate for a screen-based medium. Points and picas are unreliable since systems can use different dpisettings. Pixel appears to be the most suitable, but it can lead to accessibility issues because the text cannot be resized in IE.
+        </p>
+    </section>
+    <div class="section-inwza">
+
+    </div>
+    <section>
+        <h1>Text Sizing and Page Zooming</h1>
+            
+        <p>This is where additional complexity creeps in. Most browsers allow the user to:
+        </p>
+        <p>
+            1. increase or decrease the base text size (image dimensions are not changed)
+        </p>
+        <p>2. zoom the page in or out so all the text and graphics change accordingly, or</p>
+        <p>3. allow both text sizing and page zooming.</p>
+        <p ><b>Just to complicate matters further, Internet Explorer does not allow text resizing on elements which have a font size defined in pixels (px).
+        </b></p>
+    </section>
+    <div class="section-inwza">
+
+    </div>
+    <section>
+        <h1>Relative Lengths</h1>
+            
+        <p> The font-size property can be assigned a unit that it relative to its parent’s font size:
+        </p>
+        <ul>
+            <li>em: 1em is equivalent to the current font size, so 2em is twice as large.</li>
+            <li>%: 100% is equivalent to the current font size, so 200% is twice as large.</li>
+            <li>ex: 1ex is equivalent to the height of the letter ‘x’ in the current font.</li>
+        </ul>
+        <p>Few developers use ‘ex’, but it can be useful in some situations where you need fine-grained font sizes, e.g. 1ex rather than 0.525em.
+        </p>
+        <br>
+        <p>Percentage and ‘em’ sizes are equivalent, e.g. 50% = 0.5em, 100% = 1em, 120% = 1.2em, etc. Some browsers exhibit subtle differences but it’s rarely a major problem. If you want to save every byte, you could choose the shortest definition, i.e. 50% is shorter than 0.5em and 1em is shorter than 100%</p>
+    </section>
+    <div class="section-inwza">
+
+    </div>
+    <footer>
+        <p>PANATTHAWUT PORMMUEANG 643021239-8</p>
+    </footer>
+    
+</body>
+
+</html>

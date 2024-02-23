@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "./index.css">
+</head>
+<body>
+    <header>
+        
+        <div class="header-left" >
+            <h1>
+                <a href="index.html">
+                    HOME
+                </a>
+                
+            </h1>
+        </div>
+        <div class="header-center">
+            <div class="navbar">
+
+                <ul >
+                    <li  >
+                        <a   href="home.html">
+                            page1
+
+                        </a>
+                    </li>
+                    <li class="active" >
+                        <a href="page2.html">
+                            page2
+
+                        </a>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+        
+        
+
+        
+    </header>
+    <div class="header_nav">
+
+    </div>
+    <nav>
+        <h1>
+            About this site (2)
+        </h1>
+        <p>This site teaches the CSS fundamentals that are used in any website's layout.</p>
+        
+    </nav>
+    <div class="footer_nav">
+       
+    </div>
+    <section>
+<p>The original box model behavior was eventually considered unintuitive, so a new CSS property called box-sizing was created. When you set box-sizing: border-box; on an element, the padding and border of that element no longer increase its width. Here is the same example as the previous page, but with box-sizing: border-box; on both elements:</p>
+<div class="box1">.simple {<br>
+    width: 500px;<br>
+    margin: 20px auto;<br>
+    -webkit-box-sizing: border-box;<br>
+       -moz-box-sizing: border-box;<br>
+            box-sizing: border-box;<br>
+  } <br><br>
+  
+  .fancy {<br>
+    width: 500px;<br>
+    margin: 20px auto;<br>
+    padding: 50px;<br>
+    border: solid blue 10px;<br>
+    -webkit-box-sizing: border-box;<br>
+       -moz-box-sizing: border-box;<br>
+            box-sizing: border-box;<br>
+  }</div>
+  <div class="box2">(div class="simple") <br>
+    We're the same size now!</div>
+    <div class="box2">(div class="fancy") <br>
+        Hooray!</div>
+<p>Since this is so much better, some authors want all elements on all their pages to always work this way. Such authors put the following CSS on their pages:</p>
+    <div class="box1">* { <br>
+        -webkit-box-sizing: border-box;<br>
+           -moz-box-sizing: border-box;<br>
+                box-sizing: border-box;<br>
+      }</div>
+      <p>This ensures that all elements are always sized in this more intuitive way.</p>
+<p>Since box-sizing is pretty new, you should use the -webkit- and -moz- prefixes for now, as I have in these examples. This technique enables experimental features in specific browsers. Also, keep in mind that this one is IE8+.</p>
+<br><p>In order to make more complex layouts, we need to discuss the position property. It has a bunch of possible values, and their names make no sense and are impossible to remember. Let's go through them one by one, but maybe you should bookmark this page too.</p>
+<br>
+<h2>static</h2>
+<div class="box1">.static { <br>
+    position: static;<br>
+  }</div>
+<div class="box2">(div class="static") <br>
+    static is the default value. An element with position: static; is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned.</div>
+ <br>
+ <h2>relative</h2>
+ <div class="box1">.relative1 { <br>
+    position: relative;<br>
+  } <br>
+  .relative2 {<br>
+    position: relative;<br>
+    top: -20px;<br>
+    left: 20px;<br>
+    background-color: white;<br>
+    width: 500px;<br>
+  }</div>
+  <div style="position: relative;">relative behaves the same as static unless you add some extra properties.</div>
+  <div style="position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;">Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</div>
+ <br>
+ <h2>absolute</h2>
+ <p>absolute is the trickiest position value. absolute behaves like fixed except relative to the nearest positioned ancestor instead of relative to the viewport. If an absolutely-positioned element has no positioned ancestors, it uses the document body, and still moves along with page scrolling. Remember, a "positioned" element is one whose position is anything except static. <br>Here is a simple example:</p>
+<div class="box1">.relative { <br>
+    position: relative;<br>
+    width: 600px;<br>
+    height: 400px;<br>
+  } <br>
+  .absolute {<br>
+    position: absolute;<br>
+    top: 120px;<br>
+    right: 0;<br>
+    width: 300px;<br>
+    height: 200px;<br>
+  }</div>
+  <div style="position: relative;
+  width: 600px;
+  height: 400px;
+  border: solid;"
+  >This element is relatively-positioned. If this element was position: static; its absolutely-positioned child would escape and would be positioned relative to the document body.
+  <div style="position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  border: solid;">This element is absolutely-positioned. It's positioned relative to its parent</div></div>
+
+
+
+
+
+</section>
+    
+    <footer>
+        <a>PANATTHAWUT PORMMUEANG &copy; 643021239-8</a>
+    </footer>
+</body>
+</html>

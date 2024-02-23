@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Information</legend>
+            Student id : <input type="text" 
+            pattern="[6][0-9]{8}-[0-9]"><br>
+            Fullname : <input type="text"><br>
+            <input type="submit" value="ส่งนะ">
+        </fieldset>
+        <fieldset>
+            <legend>pass</legend>
+            PAssword : <input type="password">
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" name="gender"> male <br>
+            <input type="radio" name="gender"> female <br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                checkbox
+            </legend>
+            <input type="checkbox "name="sport" value="F"> FOOTBALL <br>
+            <input type="checkbox "name="sport" value="B"> BASKETBALL <br>
+            <input type="checkbox "name="sport" value="V"> VOLLEYBALL <br>
+        </fieldset>
+        <fieldset>
+            <legend>selec</legend>
+            <select name="major" id="">
+                <option value="" hidden>SELECMAJOR</option>
+                <option value="">cs</option>
+                <option value="">it</option>
+                <option value="">gis</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>text area</legend>
+            <textarea name="detail"  cols="30" rows="10"></textarea>
+        </fieldset>
+    </form>
+    <script>
+        function valid(){
+            const pwd = document.forms["myForm"]["pwd"].value
+        }
+    </script>
+</body>
+</html> 

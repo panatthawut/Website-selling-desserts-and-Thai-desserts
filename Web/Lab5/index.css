@@ -1,0 +1,190 @@
+/*กำหนดรูปเเบบของ font สีพื้นหลัง เเละระยะห่างของขอบหน้าเว็ป*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #d5d3d3;
+  }
+/*กำหนดระยะห่างจากขอบด้านในกับตัวอักษร
+มีตัวอักษรเป็นสีขาว
+ตำเเหน่งของตัวอักษรอยู่ตรงกลาง*/
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  /*กำหนดระยะห่างจากขอบด้านในกับตัวอักษร
+มีตัวอักษรเป็นสีขาว
+ตำเเหน่งของตัวอักษรอยู่ตรงกลาง*/
+  footer{
+    
+    padding: 5px;
+    text-align: center;
+    color: white;
+    bottom: 0px;/*กำหนดให้ชิดข้างล่าง*/
+    
+    margin-top: 100px;/*กำหนดให้ห่างจากส่วนของเนื้อหาด้านบน*/
+  }
+  /*กำหนดไอดี ของสีที่จะใช้
+  กำหนดหลายรูปเเบบเผื่อการใช้งานหลายๆเบาว์เซอร์*/
+  #grad {
+    
+  background: -webkit-linear-gradient(to right, #3159ca,#2c92f6, #2ccffd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, #3159ca,#2c92f6, #2ccffd); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, #3159ca,#2c92f6, #2ccffd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3159ca,#2c92f6, #2ccffd); /* Standard syntax */
+  }
+  /*กำหนดขนาดเเละระยะห่างของตัวอักษร h1 ใน header*/
+header h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    
+
+  }
+  /*คลาสกำหนด เงา ใช้ในตัวอักษร ของheader*/
+  .header-color{
+    text-shadow: 3px 3px 2px rgb(161, 161, 161);
+  }
+  /*กำหนดขนาดเเละระยะห่างของตัวอักษร h4 ใน header*/
+header h4{
+    font-weight: bold ;
+    
+    letter-spacing: 4px;
+    
+    
+}
+/*กำหนด ขนาดตัวอักษรเป็นเเบบหนา
+เเละระยะห่างระหว่างตัวอักษร*/
+footer h4{
+    font-weight: bold ;
+    
+    letter-spacing: 4px;
+    
+}
+/*เเถบเมนู
+*/
+nav {
+    overflow: hidden;
+    background-color: #1d2040;/*สีของพื้นหลังเมนู*/
+    position: sticky;/*กำหนดว่าเมื่อเลื่อนหน้าเว็ปขึ้นเเถบเมนู
+    จะไม่เลื่อนขึ้นจนหายไป เเละขึ้นไปเป็นเเถบเมนูอยู่ด้สนบนเเทน*/
+    text-align: center;/*ตัวอักษรในเเถบเมนูอยู่ตรงกลาง*/
+    top: 0;/*ห่างจากด้านบน หรือheader 0*/
+    
+  }
+/*ส่วนของ a หรือตัวหนังสือในเเถบ nav */
+nav a {
+    font-size: 130%; /*มีขนาดใหญ่กว่าเดิม 130%*/
+    float: left; /*ชิดซ้าย*/
+    text-shadow:1px 1px 2px #ffffff; /*เงาเป็นสีขาวเพื่อการมองเห็นที่ชัดขึ้น ตัดกับพื้นหลัง*/
+    display: block;
+    color: white; /*สีตัวหนังสือ*/
+    text-align: center;/*ตัวอักษรในเเถบเมนูอยู่ตรงกลาง*/
+    padding: 25px 30px;
+   
+    text-decoration: none;
+  }
+  /*ส่วนของ กดนำเม้าไปชี้ ส่วนเมนู nav */
+  nav a:hover{
+    background-color: #8294bd; /*เปลี่ยนสีเมื่อนำเม้าไปชี้*/
+  }
+  /*คลาสเมื่อหน้าเว็ปเพจนั้นถูกเข้าถึงหรือใช้งานอยู่ เเถบเมนูของหน้านั้นจะเปลี่ยนสี*/
+  .nav-active{
+    background-color: #3235b8; 
+  }
+  /*คลาสของ ส่วนของเนื้อหา Page2  */
+  .show-data{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    background-color: #ffffff;
+    height: auto;
+    padding: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  /*ส่วน p ของ คลาสshow-data*/
+  .show-data p{
+    text-indent: 10px;
+    color: #747474;
+  }
+  /*ส่วน li ของ คลาสshow-data*/
+  .show-data li{
+    text-indent: 10px;
+    color: #292929;
+  }
+  /*มีสองส่วนอยู่ในหน้านี้ article  aside*/
+  /*กำหนดสีเเละ การเว้นระยะ*/
+  section{
+    background-color: #d5d3d3;
+    height: 45em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    
+  }
+  
+  article{
+    background-color: #dcdcdc;
+    height: auto;
+    
+    margin-top: 5%;
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+  }
+  aside{
+    background-color: #e7e7e7;
+    height:35em;
+    
+    margin-top: 5%;
+    width: 10%;
+    float: right;
+    border-left: solid #9d9d9d 1px ;
+    margin-right: 10px;
+    
+  }
+  /*คลาส ตัวอย่างของเนื้อหา เผื่อที่จะนำไปสู่เนื้อหาต่อไป*/
+  .inwza{
+    background-color: white;
+    height: auto;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    
+  }
+  /*คลาสการตกเเต่ง ปุ่มกด เผื่อเชื่อมหน้าเว็ปเพจอื่นๆ*/
+  .button {
+    background-color: #2168af;
+    
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  /*เมื่อนำเม้ามาชี้ที่ปุ่ม*/
+  .button:hover {
+    background-color: #2c92f6;
+    
+  }
+
+  /*ส่วนของหัวข้อใหญ่ เเละตัวอย่างเนื้อหาในคลาส inwza*/
+  .inwza h1{
+    font-size: x-large;
+  }
+  .inwza p{
+    text-indent: 10px;
+    color: #989898;
+  }
+
+  
+  
+  
+  

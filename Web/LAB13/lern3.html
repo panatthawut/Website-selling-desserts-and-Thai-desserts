@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            background-color: grey;
+            border-bottom: 2px solid;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            
+        }
+        tbody tr:nth-child(2n-1){
+            background-color: lightgray;
+        }
+        
+        td:hover{
+            color: white;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <thead>
+        
+            <tr>
+                <th>Heading1</th>
+                <th>Heading2</th>
+            </tr>
+    
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>Colum1 Row1</td>
+                <td>Colum2 row1</td>
+            </tr>
+            <tr class="two">
+                <td>Colum1 Row2</td>
+                <td>Colum2 row2</td>
+            </tr>
+            <tr class="three">
+                <td>Colum1 Row3</td>
+                <td>Colum2 row3</td>
+            </tr>
+        
+    </tbody>
+</table>
+</body>
+</html>

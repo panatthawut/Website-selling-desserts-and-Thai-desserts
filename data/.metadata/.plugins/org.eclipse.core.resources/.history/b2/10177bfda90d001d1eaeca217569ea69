@@ -1,0 +1,85 @@
+public class ArrayQueue {
+	 public int[] array;
+	 
+	 public int back= -1;
+	 public int front= -1;
+	 
+	 
+	 
+	 
+	 public ArrayQueue(int n){
+		 
+		 array=new int[n];
+		 back= -1;
+		 front= -1;
+	 }
+	 
+	 public void enqueue(int newData) {
+		 int newback;
+		 if(back==array.length-1) {
+			 newback=0;
+		 }else {
+			 newback=back+1;
+		 }
+		 if(newback==front) {
+			 System.out.println("Fail");
+		 }else {
+			 back=newback;
+			 array[back]=newData;
+			 if(front== -1) {
+				 front=0;
+				 
+			 }
+			 System.out.println("Enqueue : "+newData);
+			 System.out.println("Success");
+		 }
+	 }
+	 
+	public void  dequeue()
+	    {
+	        
+	        if (front == back) { 
+	            System.out.printf("no data \n");
+	            return;
+	        }
+	 
+	        
+	        else {
+	            for (int i = 0; i < back - 1; i++) {
+	                array[i] = array[i + 1];
+	            }
+	 
+	            // store 0 at rear indicating there's no element
+	            if (back < cap)
+	                array[back] = 0;
+	 
+	            // decrement rear
+	            back--;
+	        }
+	        return;
+	    }
+	 
+	 
+	 
+	 public void printQueue() {
+		 if(front<=back) {
+			 System.out.print("Result : ");
+			 for(int i=front;i<=back;i++) {
+				 System.out.print(array[i]+" ");
+			 }
+		 }else {
+			 for(int i = front;i<array.length;i++) {
+				 System.out.print(array[i]+" ");
+			 }
+		 }
+		 System.out.println("\n");
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+}

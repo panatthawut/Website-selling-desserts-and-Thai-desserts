@@ -1,0 +1,43 @@
+
+public class TestStack {
+	public static void main(String[] args) {
+		StackOp st = new StackOp();
+		st.push(1);
+		extracted(st);
+		st.push(1);
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.push(3);
+		extracted(st);
+		st.push(4);
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.push(8);
+		extracted(st);
+		st.push(9);
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.push(10);
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.pop();
+		extracted(st);
+		st.push(11);
+		extracted(st);
+		st.push(12);
+		extracted(st);
+		System.out.println("top:"+st.top);
+	}
+
+	private static void extracted(StackOp st) {
+		st.printStack();
+	}
+}

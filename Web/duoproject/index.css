@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap');           
+
+#introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+        .carousel-item:nth-child(1) {
+          background-image: url('./รูปป/cake.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(2) {
+          background-image: url('./รูปป/thai-2.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(3) {
+          background-image: url('./รูปป/event-1.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(4) {
+          background-image: url('./รูปป/คลายร้อน2.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(5) {
+          background-image: url('./รูปป/เทศกาล.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        .carousel-item:nth-child(6) {
+          background-image: url('./รูปป/น้ำชาจีน.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 50vh;
+          }
+        }
+        .navbar .nav-link {
+          color: #fff ;
+        }
+        .dropdown-menu li {
+            position: relative;
+            }
+            .dropdown-menu .dropdown-submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -10px;
+            }
+            .dropdown-menu .dropdown-submenu-left {
+            right: 100%;
+            left: auto;
+            }
+            .dropdown-menu > li:hover > .dropdown-submenu {
+            display: block;
+            
+            }
+            .BIW{
+              height: 200px;
+              width: 90%;
+            }
+            .BIW-1{
+              display: none;
+            }
+            .BIW-3{
+              height: 200px;
+              width: 100%;
+            }
+            .BIW-4{
+              height: 10%;
+              width: 100%;
+            }
+            .BIW-5{
+              width: 200px;
+              height: 200px;
+              box-shadow: 5px 5px 10px rgba(79, 79, 79, 0.727);
+              margin-bottom: 10px;
+              border-radius: 10px;
+            }
+            .BIW-6{
+              width: 280px;
+              height: 280px;
+              box-shadow: 5px 5px 10px rgba(79, 79, 79, 0.727);
+              margin-bottom: 10px;
+              border-radius: 10px;
+            }
+            .BIW-7{
+              background: linear-gradient(
+                  45deg,
+                  rgba(236, 53, 29, 0.7),
+                  rgba(56, 52, 45, 0.7) 100%
+                );
+            }
+            .BIW-8{
+              height: 300px;
+              position: relative;
+            }
+            .BIW-thai1{
+              display: none;
+              max-height: 400px;
+              width: 100%;
+              
+            }
+            .BIW-thai{
+              max-height: 400px;
+              width: 100%;
+              
+            }
+            .fa-angle-double-right{
+             margin-top: 100%;
+            }
+            .fa-angle-double-down{
+              display: none;
+             }
+             .tanakran{
+              text-align: center;
+              
+             }
+             .tanakran img{
+              width: 40%;
+             }
+             .product-item  {
+              border: 1px solid #288e57;
+              border-radius: 20px;
+              
+             }
+             * {
+              font-family: 'Prompt', sans-serif;
+            }
+            #tesskran{
+              height: 450px;
+            }
+            .font-thai1{
+              font-size: 1.5em;
+            }
+            .font-cake1{
+              font-size: 1.2rem;
+            }
+            .product-item span{
+              font-size: 1.4rem;
+            }
+            .product-item a{
+              font-size: 1.4rem;
+              color: black;
+            }
+            
+            .contact1{
+             margin-left: auto;
+             margin-right: auto;
+             border: black solid 2px;
+             position:relative;
+             
+             width: 80%;
+             
+             
+            }
+            .bg-contact1{
+              margin-left: auto;
+              margin-right: auto;
+              
+              
+              
+              
+              
+             }
+            
+            .contact-top{
+              min-height:100%;
+              background-image: url('./รูปป/1อีเว้น.jpg')no-repeat 50% 100%;;
+              width:100%;
+              
+            }
+            .hi-hit{
+              height: 260px;
+              width: 100%;
+            }
+            .bot-img{
+              height: 100%;
+              max-height: 300px;
+              width: 100%;
+              max-width: 500px;
+            }
+            .BIW-HITBIG{
+              text-align: center;
+              height: 350px;
+              padding-top:auto ;
+            }
+            .BIW-HITBIG img{
+              text-align: center;
+              height: 350px;
+              width: 100%;
+            }
+            .list-bg-biw{
+              background-color: #dde5b6;
+            }
+            .border1{
+              border: solid thin;
+              border-color: #adc178;
+              border-radius: 2px;
+              
+            }
+            .btn1{
+              background-color: #adc178;
+            }
+            .btn2{
+              background-color: #adc178;
+              color: #fff;
+            }
+            .event-bg-biw{
+              background-color:#6c584c;
+              color:rgb(193, 193, 193);
+            }
+            .BIW-10{
+              height: 450px;
+            }
+            .BIW-9{
+              height: 250px;
+            }
+            .BIW-WEEN{
+              background-color: rgba(87, 87, 87, 0.408);
+            }
+            .BIW-LIST {
+              background-color: rgba(0, 0, 0, 0.599);
+            }
+            .BIW-12{
+              height: 500px;
+            }
+            .BIW-11{
+              height: 290px;
+            }
+            .BIW-14{
+              height: 300px;
+              
+            }
+            .BIW-15{
+              height: 200px;
+              
+            }
+            .text-list{
+              color: white;
+              text-shadow: #040404 2px 2px ;
+            }
+            .text-list-all{
+              color: #288e57;
+            }
+            .active-header-b{
+              background-color: #97c90e9f;
+              
+              
+            }
+             
+            
+@media (max-width:991px){
+  
+  
+  .dropdown-menu>li>.dropdown-item{
+    display: none;
+    position: static;
+  }
+  li:hover>.dropdown-menu{
+    position: static;
+    
+    
+  }
+  li:hover>.dropdown-menu>li>.dropdown-item{
+    position: static;
+    display: inline-block;
+    
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    
+    }
+    .dropdown-submenu .dropdown-submenu .dropdown-item {
+    text-indent: 10px;
+    }
+    .BIW{
+      display: none;
+    }
+    .BIW-1{
+      display: block;
+    }
+    .BIW-2{
+      text-align: center;
+    }
+    .BIW-3{
+      height: 350px;
+      width: 100%;
+    }
+    .BIW-6{
+      width: 250px;
+      height: 250px;      
+    }
+    .BIW-thai{
+     display: none;         
+    }
+    .BIW-thai1{
+      display: block;
+    }
+    .fa-angle-double-right{
+      margin-top: 100%;
+      display: none;
+      
+     }
+     .fa-angle-double-down{
+      display: block;
+     }
+     .tanakran{
+      text-align: center;
+      
+     }
+     .tanakran img{
+      width: 100%;
+     }
+     .font-about{
+      text-align: center;
+     }
+     .hi-hit{
+      height: 170px;;
+    }
+    .BIW-10{
+      height: 300px;
+    }
+    .BIW-9{
+      height: 300px;
+    }
+    .BIW-12{
+      height: 300px;
+    }
+    .BIW-11{
+      height: 300px;
+    }
+    .BIW-14{
+      height: 300px;
+      border: white 2px solid;
+    }
+    .BIW-15{
+      height: 300px;
+      border: white 2px solid;
+    }
+
+}
+@media (max-width:676px){
+  .hi-hit{
+    height: 150px;;
+  }
+}
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+@media screen and (min-width:400px) {
+  
+}

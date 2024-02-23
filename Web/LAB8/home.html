@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "./index.css">
+</head>
+<body>
+    <header>
+        
+        <div class="header-left" >
+            <h1>
+                <a href="index.html">
+                    HOME
+                </a>
+                
+            </h1>
+        </div>
+        <div class="header-center">
+            <div class="navbar">
+
+                <ul >
+                    <li class="active" >
+                        <a   href="home.html">
+                            page1
+
+                        </a>
+                    </li>
+                    <li >
+                        <a href="page2.html">
+                            page2
+
+                        </a>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+        
+        
+
+        
+    </header>
+    <div class="header_nav">
+
+    </div>
+    <nav>
+        <h1>
+            About this site
+        </h1>
+        <p>This site teaches the CSS fundamentals that are used in any website's layout.</p>
+        
+        
+    </nav>
+    <div class="footer_nav">
+       
+    </div>
+    <section>
+        <p>Having no layout whatsover is almost ok if all you want is one big column of content. However, if a user makes the browser window really wide, it gets kind of annoying to read: after each line your eyes have a long distance to travel right-to-left to the next line. Try resizing your browser to see what I mean!</p>
+        <br>
+         <p>   Before we fix this problem, let's make sure we're clear on the very important display property.</p>
+         <br>
+         <p>display is CSS's most important property for controlling layout. Every element has a default display value depending on what type of element it is. The default for most elements is usually block or inline. A block element is often called a block-level element. An inline element is always just called an inline element.
+            
+        </p>
+        
+        <h2>
+            block
+        </h2>
+        
+    <div class="box2">div is the standard block-level element. A block-level element starts on a new line and stretches out to the left and right as far as it can. Other common block-level elements are p and form, and new in HTML5 are header, footer, section, and more.</div>
+     <h2>inline</h2>
+     <br>
+     <p>span is the standard inline element. An inline element can wrap some text inside a paragraph <span> like this </span> without disrupting the flow of that paragraph. The a element is the most common inline element, since you use them for links.</p>
+    <br>
+    <h2>none</h2>
+    <br>
+    <p>Another common display value is none. Some specialized elements such as script use this as their default. It is commonly used with JavaScript to hide and show elements without really deleting and recreating them.</p>
+    <br>
+    <p>This is different from visibility. Setting display to none will render the page as though the element does not exist. visibility: hidden; will hide the element, but the element will still take up the space it would if it was fully visible.
+
+    </p>
+    <br>
+    <h2>other display values</h2>
+    <br>
+    <p>There are plenty of more exotic display values, such as list-item and table. Here is an exhaustive list. We'll discuss inline-block and flex later on.</p>
+    <br>
+    <h2>extra credit</h2>
+    <br>
+    <p>As I mentioned, every element has a default display type. However, you can always override this! Though it wouldn't make sense to make an inline div, you can use this to customize the display of elements that have particular semantics. A common example is making inline li elements for horizontal menus.</p>
+    <div class="box1">#main {
+       <br> width: 600px;
+        <br> margin: 0 auto; 
+     <br> }</div>
+    <div class="box2">Setting the width of a block-level element will prevent it from stretching out to the edges of its container to the left and right. Then, you can set the left and right margins to auto to horizontally center that element within its container. The element will take up the width you specify, then the remaining space will be split evenly between the two margins.
+        <br>The only problem occurs when the browser window is narrower than the width of your element. The browser resolves this by creating a horizontal scrollbar on the page. Let's improve the situation...
+    </div>
+    <div class="box1">
+        #main { <br>
+            max-width: 600px; <br>
+            margin: 0 auto; <br>
+          }
+    </div>
+    <div class="box2">Using max-width instead of width in this situation will improve the browser's handling of small windows. This is important when making a site usable on mobile. Resize this page to check it out! <br>
+        By the way, max-width is supported by all major browsers including IE7+ so you shouldn't be afraid of using it.</div>
+    <br>
+    <p>While we're talking about width, we should talk about width's big caveat: the box model. When you set the width of an element, the element can actually appear bigger than what you set: the element's border and padding will stretch out the element beyond the specified width. Look at the following example, where two elements with the same width value end up different sizes in the result.</p>
+    
+    <div class="box1">.simple { <br>
+        width: 500px;<br>
+        margin: 20px auto;<br>
+      }br
+      
+      .fancy {<br>
+        width: 500px;<br>
+        margin: 20px auto;<br>
+        padding: 50px;<br>
+        border-width: 10px;<br>
+      }</div>
+    
+    <div class="box2">(div class="simple") <br>
+        I'm smaller...</div>
+    <div class="box2">(div class="fancy")
+       <br> And I'm bigger!</div>
+    <br>
+    <p>For generations, the solution to this problem has been extra math. CSS authors have always just written a smaller width value than what they wanted, subtracting out the padding and border. Thankfully, you don't have to do that anymore...</p>
+    
+        </section>
+    
+    <footer>
+        <a>PANATTHAWUT PORMMUEANG &copy; 643021239-8</a>
+    </footer>
+</body>
+</html>
